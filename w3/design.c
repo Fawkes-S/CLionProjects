@@ -13,16 +13,17 @@ MyLinkedList* myLinkedListCreate() {
 }
 
 int myLinkedListGet(MyLinkedList* obj, int index) {
-    MyLinkedList *cur = obj->next;
-    for(int i=0;cur->next!=NULL;i++){
-        if(index==i){
-            return cur->val;
-        }
-        else{
-            cur=cur->next;
-        }
+    if(index<0||obj->next==NULL){
+        return -1;
     }
-    return -1;
+    MyLinkedList *cur = obj->next;
+    for(int i=0;i<index;i++){
+        if(!cur->next){
+            return -1;
+        }else
+            cur=cur->next;
+    }
+    return cur->val;
 }
 
 void myLinkedListAddAtHead(MyLinkedList* obj, int val) {
@@ -124,7 +125,7 @@ int main(){
     printf("@@3:\n");
     showLL(linkedList);
     printf("@@4:\n");
-    b=myLinkedListGet(linkedList,1);
+    b=myLinkedListGet(linkedList,2);
     printf("%d",b);          //返回3
 
 }
