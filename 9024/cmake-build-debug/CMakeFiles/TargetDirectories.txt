@@ -1,0 +1,3 @@
+C:/Users/Jackson/CLionProjects/9024/cmake-build-debug/CMakeFiles/9024.dir
+C:/Users/Jackson/CLionProjects/9024/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Jackson/CLionProjects/9024/cmake-build-debug/CMakeFiles/rebuild_cache.dir
