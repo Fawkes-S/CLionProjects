@@ -49,7 +49,11 @@ NodeT *joinLL(NodeT *list, int v) {
     return list;
 }
 int isDigit(char *ch){
-    for(int i=0;i< strlen(ch);i++){
+    int i=0;
+    if(ch[0]=='-'){
+        i++;
+    }
+    for(;i< strlen(ch);i++){
         if(ch[i]>'9'||ch[i]<'0')
             return 0;
     }

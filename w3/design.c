@@ -1,6 +1,6 @@
 #include "stdio.h"
 #include<malloc.h>
-typedef struct {
+typedef struct MyLinked_List{
     int val;
     struct MyLinkedList *next;
 } MyLinkedList;
@@ -13,16 +13,17 @@ MyLinkedList* myLinkedListCreate() {
 }
 
 int myLinkedListGet(MyLinkedList* obj, int index) {
-    MyLinkedList *cur = obj->next;
-    for(int i=0;cur->next!=NULL;i++){
-        if(index==i){
-            return cur->val;
-        }
-        else{
-            cur=cur->next;
-        }
+    if(index<0||obj->next==NULL){
+        return -1;
     }
-    return -1;
+    MyLinkedList *cur = obj->next;
+    for(int i=0;i<index;i++){
+        if(!cur->next){
+            return -1;
+        }else
+            cur=cur->next;
+    }
+    return cur->val;
 }
 
 void myLinkedListAddAtHead(MyLinkedList* obj, int val) {
@@ -42,8 +43,28 @@ void myLinkedListAddAtTail(MyLinkedList* obj, int val) {
     ntail->next = NULL;
     cur->next = ntail;
 }
-
 void myLinkedListAddAtIndex(MyLinkedList* obj, int index, int val) {
+    if(index<=0){
+        myLinkedListAddAtHead(obj, val);
+        return;
+    }
+    MyLinkedList *cur=obj->next;
+    for(int i=0;i<index-1;i++){
+        if(!cur->next){
+            myLinkedListAddAtTail(obj, val);
+            return;
+        }
+        else{
+            cur=cur->next;
+        }
+    }
+    MyLinkedList *p = (MyLinkedList*)malloc(sizeof(MyLinkedList));
+    p->val = val;
+    p->next=cur->next;
+    cur->next = p;
+    return;
+}
+void myLinkedListAddAtIndex_1(MyLinkedList* obj, int index, int val) {
     if (index == 0){
         myLinkedListAddAtHead(obj, val);
         return;
@@ -63,7 +84,7 @@ void myLinkedListAddAtIndex(MyLinkedList* obj, int index, int val) {
     }
 }
 
-void myLinkedListDeleteAtIndex(MyLinkedList* obj, int index) {
+void myLinkedListDeleteAtIndex_1(MyLinkedList* obj, int index) {
     if (index == 0){
         MyLinkedList *tmp = obj->next;
         if (tmp != NULL){
@@ -89,6 +110,31 @@ void myLinkedListDeleteAtIndex(MyLinkedList* obj, int index) {
 
 }
 
+void myLinkedListDeleteAtIndex(MyLinkedList* obj, int index) {
+    MyLinkedList *cur=obj->next;
+    if(cur->next==NULL){
+        obj->next=NULL;
+        return;
+    }
+    if(index==0&&cur->next){
+        obj->next = cur->next;
+        return;
+    }
+    for(int i=1;i<index;i++){
+        if(cur->next==NULL){
+            return;
+        }else{
+            cur=cur->next;
+        }
+    }
+    if(cur->next==NULL){
+        return;
+    }else{
+        MyLinkedList *temp = cur->next;
+        cur->next=temp->next;
+    }
+    return;
+}
 void myLinkedListFree(MyLinkedList* obj) {
     while(obj != NULL){
         MyLinkedList *tmp = obj;
@@ -109,22 +155,61 @@ void showLL(MyLinkedList *list) {
     }
     printf("\n");
 }
+MyLinkedList* reverseList(MyLinkedList* head){
+    MyLinkedList *pre = NULL;
+    MyLinkedList *cur = head->next;
+    MyLinkedList *next;
+    while(cur){
+        next = cur->next;
+        cur->next=pre;
+        pre=cur;
+        cur=next;
+    }
+    return pre;
+}
 int main(){
-    int a,b;
+    int a,b,c;
     MyLinkedList *linkedList = myLinkedListCreate();
+    MyLinkedList *rList = myLinkedListCreate();
+    //showLL(linkedList);
     myLinkedListAddAtHead(linkedList,1);
+//    myLinkedListDeleteAtIndex(linkedList,0);
+//    showLL(linkedList);
     myLinkedListAddAtTail(linkedList,3);
     myLinkedListAddAtIndex(linkedList,1,2); //链表变为1-> 2-> 3
     printf("@@1:\n");
     showLL(linkedList);
-    printf("@@2:\n");
-    a=myLinkedListGet(linkedList,1);
-    printf("%d\n",a);          //返回2
-    myLinkedListDeleteAtIndex(linkedList,1);  //现在链表是1-> 3
-    printf("@@3:\n");
-    showLL(linkedList);
-    printf("@@4:\n");
-    b=myLinkedListGet(linkedList,1);
-    printf("%d",b);          //返回3
+    rList=reverseList(linkedList);
+    printf("Show after reversing:\n");
+    showLL(rList);
+
+//    printf("@@2:\n");
+//    a=myLinkedListGet(linkedList,1);
+//    printf("%d\n",a);          //返回2
+//    myLinkedListDeleteAtIndex(linkedList,1);  //现在链表是1-> 3
+//    printf("@@delete index 3:\n");
+//    myLinkedListDeleteAtIndex(linkedList,3);
+//    showLL(linkedList);
+//    printf("@@delete index 0 -1:\n");
+//    myLinkedListDeleteAtIndex(linkedList,0);
+//    showLL(linkedList);
+//    printf("@@delete index 0 -2:\n");
+//    myLinkedListDeleteAtIndex(linkedList,0);
+//    showLL(linkedList);
 
 }
+//int main(){
+//    int a,b,c;
+//    MyLinkedList *linkedList = myLinkedListCreate();
+//    myLinkedListAddAtHead(linkedList,4);
+//    myLinkedListAddAtHead(linkedList,1);
+//    myLinkedListAddAtHead(linkedList,5);
+//    myLinkedListDeleteAtIndex(linkedList,3);
+//    showLL(linkedList);
+//    myLinkedListAddAtHead(linkedList,7);
+//    myLinkedListAddAtHead(linkedList,1);
+//    showLL(linkedList);
+//    myLinkedListDeleteAtIndex(linkedList,4);
+//
+//
+//}
