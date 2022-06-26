@@ -19,3 +19,4 @@ void  removeEdge(Graph, Edge);
 bool  adjacent(Graph, Vertex, Vertex);
 void  showGraph(Graph);
 void  freeGraph(Graph);
+void depthFirstSearch(Graph, Vertex);

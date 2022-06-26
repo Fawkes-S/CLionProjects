@@ -88,3 +88,4 @@ void freeGraph(Graph g) {
     free(g->edges);
     free(g);
 }
+

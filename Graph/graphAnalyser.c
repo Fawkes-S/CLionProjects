@@ -22,7 +22,7 @@ void clique(Graph *graph, int n){
             con_v[x]=-1;
         }
         for(int j=0;j<n;j++){
-            if(j!=i&& adjacent(graph,i,j)){
+            if(j!=i&& adjacent(*graph,i,j)){
                 con_v[j]=1;
             }
         }
@@ -30,7 +30,7 @@ void clique(Graph *graph, int n){
             if(con_v[k]==1){
                 for(int r=k+1;r<n;r++){
                     if(con_v[r]==1){
-                        if(adjacent(graph,k,r)){
+                        if(adjacent(*graph,k,r)){
                             printf("%d-%d-%d\n",i,k,r);
                         }
                     }
@@ -44,9 +44,8 @@ int main() {
     char ch1[BUFSIZ], ch2[BUFSIZ];
     printf("Enter the number of vertices: ");
     scanf("%d", &n);
-    Graph *graph = newGraph(n);
-
-    //struct GraphRep graphRep  = newGraph(n);
+    //Graph graph = newGraph(n);
+    struct GraphRep *graph  = newGraph(n);
     while(1){
         printf("Enter an edge (from):");
         scanf("%s", ch1);
@@ -65,13 +64,11 @@ int main() {
             break;
         }
     }
-    printf("%c",ch1);
-    printf("%c",ch2);
-    printf("Show the graph\n");
+    printf("Show the graph:\n");
     showGraph(graph);
     int degree;
     int d[n];
-    int max = -1, min = INT_MAX;
+    int max = -1, min = 1000;
     for(int i=0;i<n;i++){
         degree = 0;
         for(int j=0;j<n;j++){
@@ -87,14 +84,6 @@ int main() {
             min = d[i];
         }
     }
-//    for(int i=0;i<n;i++){
-//        if(d[i]>max){
-//            max = d[i];
-//        }
-//        if(d[i]<min){
-//            min = d[i];
-//        }
-//    }
     printf("Minimum degree: %d\n",min);
     printf("Maximum degree: %d\n",max);
     printf("Nodes of minimum degree:\n");
@@ -109,5 +98,8 @@ int main() {
             printf("%d\n",i);
         }
     }
-    clique(graph,n);
+    printf("Triangles:\n");
+    clique(&graph,n);
+    freeGraph(graph);
+    return 0;
 }
