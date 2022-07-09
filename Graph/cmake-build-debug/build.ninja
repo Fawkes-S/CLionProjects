@@ -49,14 +49,20 @@ cmake_ninja_workdir = C$:/Users/Jackson/CLionProjects/Graph/cmake-build-debug/
 
 build cmake_object_order_depends_target_untitled1: phony || CMakeFiles/untitled1.dir
 
-build CMakeFiles/untitled1.dir/graphAnalyser.c.obj: C_COMPILER__untitled1_Debug C$:/Users/Jackson/CLionProjects/Graph/graphAnalyser.c || cmake_object_order_depends_target_untitled1
-  DEP_FILE = CMakeFiles\untitled1.dir\graphAnalyser.c.obj.d
+build CMakeFiles/untitled1.dir/pack/WGraph.c.obj: C_COMPILER__untitled1_Debug C$:/Users/Jackson/CLionProjects/Graph/pack/WGraph.c || cmake_object_order_depends_target_untitled1
+  DEP_FILE = CMakeFiles\untitled1.dir\pack\WGraph.c.obj.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles\untitled1.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled1.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled1.dir\pack
 
-build CMakeFiles/untitled1.dir/Graph.c.obj: C_COMPILER__untitled1_Debug C$:/Users/Jackson/CLionProjects/Graph/Graph.c || cmake_object_order_depends_target_untitled1
-  DEP_FILE = CMakeFiles\untitled1.dir\Graph.c.obj.d
+build CMakeFiles/untitled1.dir/pack/PQueue.c.obj: C_COMPILER__untitled1_Debug C$:/Users/Jackson/CLionProjects/Graph/pack/PQueue.c || cmake_object_order_depends_target_untitled1
+  DEP_FILE = CMakeFiles\untitled1.dir\pack\PQueue.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\untitled1.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled1.dir\pack
+
+build CMakeFiles/untitled1.dir/dijkstra.c.obj: C_COMPILER__untitled1_Debug C$:/Users/Jackson/CLionProjects/Graph/dijkstra.c || cmake_object_order_depends_target_untitled1
+  DEP_FILE = CMakeFiles\untitled1.dir\dijkstra.c.obj.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles\untitled1.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled1.dir
@@ -69,7 +75,7 @@ build CMakeFiles/untitled1.dir/Graph.c.obj: C_COMPILER__untitled1_Debug C$:/User
 #############################################
 # Link the executable untitled1.exe
 
-build untitled1.exe: C_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/graphAnalyser.c.obj CMakeFiles/untitled1.dir/Graph.c.obj
+build untitled1.exe: C_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/pack/WGraph.c.obj CMakeFiles/untitled1.dir/pack/PQueue.c.obj CMakeFiles/untitled1.dir/dijkstra.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled1.dir

@@ -1,7 +1,7 @@
 // Depth-first Search (recursive) ... COMP9024 22T2
 #include <stdio.h>
 #include <stdbool.h>
-#include "Graph.h"
+#include "pack/Graph.h"
 
 #define MAX_NODES 1000
 
@@ -45,6 +45,24 @@ int main(void) {
     e.v = 5; e.w = 3; insertEdge(g, e);
     e.v = 1; e.w = 2; insertEdge(g, e);
     e.v = 3; e.w = 2; insertEdge(g, e);
+
+//    e.v = 0; e.w = 1; insertEdge(g, e);
+//    e.v = 0; e.w = 2; insertEdge(g, e);
+//    e.v = 0; e.w = 5; insertEdge(g, e);
+//    e.v = 1; e.w = 5; insertEdge(g, e);
+//    e.v = 2; e.w = 3; insertEdge(g, e);
+//    e.v = 3; e.w = 5; insertEdge(g, e);
+//    e.v = 3; e.w = 4; insertEdge(g, e);
+//    e.v = 3; e.w = 8; insertEdge(g, e);
+//    e.v = 4; e.w = 5; insertEdge(g, e);
+//    e.v = 4; e.w = 7; insertEdge(g, e);
+//    e.v = 4; e.w = 8; insertEdge(g, e);
+//    e.v = 5; e.w = 6; insertEdge(g, e);
+//    e.v = 5; e.w = 7; insertEdge(g, e);
+//    e.v = 7; e.w = 8; insertEdge(g, e);
+//    e.v = 7; e.w = 9; insertEdge(g, e);
+//    e.v = 8; e.w = 9; insertEdge(g, e);
+
 
     int src = 0, dest = 5;
     if (findPathDFS(g, src, dest)) {

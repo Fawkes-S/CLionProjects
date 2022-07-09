@@ -1,8 +1,16 @@
 # ninja log v5
-9	85	6779305549721700	CMakeFiles/untitled1.dir/graphAnalyser.c.obj	cb3d5128817f51bc
-0	86	6779305549721700	CMakeFiles/untitled1.dir/Graph.c.obj	9c2bef4bf84a19ac
-79	157	6779305874098559	untitled1.exe	202c490516e6f413
-0	84	6779072322170102	CMakeFiles/untitled1.dir/DFS.c.obj	58376180b1543a0f
-1	79	6779305873341495	CMakeFiles/untitled1.dir/cycleCheck.c.obj	571a3f3e34a20a6
 1	81	6779308121969986	CMakeFiles/untitled1.dir/graphAnalyser.c.obj	cb3d5128817f51bc
-81	160	6779308122731361	untitled1.exe	9e76a441f29a6ca4
+0	86	6779305549721700	CMakeFiles/untitled1.dir/Graph.c.obj	9c2bef4bf84a19ac
+329	632	6789767405643290	untitled1.exe	11bcd45c9f81236b
+1	200	6787850895966805	CMakeFiles/untitled1.dir/Warshall.c.obj	26f99669112c11a4
+0	214	6783858142507954	CMakeFiles/untitled1.dir/floyd.c.obj	d1a38ab471521ee0
+10	328	6789767402634295	CMakeFiles/untitled1.dir/pack/PQueue.c.obj	9e76170337173e6a
+0	84	6779072322170102	CMakeFiles/untitled1.dir/DFS.c.obj	58376180b1543a0f
+2	91	6779408105277304	CMakeFiles/untitled1.dir/cycleCheck.c.obj	571a3f3e34a20a6
+1	80	6784496754637447	CMakeFiles/untitled1.dir/WGraph.c.obj	78148f42e20f75ce
+8	81	6784690179861995	CMakeFiles/untitled1.dir/popularityRank.c.obj	1d4d1a5aac5bd64c
+1	152	6790745720373842	build.ninja	85df7a0be40955ef
+1	328	6789767402634295	CMakeFiles/untitled1.dir/pack/WGraph.c.obj	785693a965cc1942
+18	327	6789767402634295	CMakeFiles/untitled1.dir/dijkstra.c.obj	82445dad668c844a
+1	72	6787893829782826	CMakeFiles/untitled1.dir/depthfindsearch.c.obj	a673e094d14672d8
+2	73	6787877993656447	CMakeFiles/untitled1.dir/pack/Graph.c.obj	771492ac2860d6c

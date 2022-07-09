@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Graph.h"
+#include "pack/Graph.h"
 #include "string.h"
 
 int isDigit(char *ch){

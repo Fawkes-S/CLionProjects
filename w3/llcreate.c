@@ -15,6 +15,13 @@ NodeT *makeNode(int v) {
     L->next = NULL;
     return L;
 }
+int isEmpty(NodeT *list){
+    if(list->next){
+        return 0;
+    }else{
+        return 1;
+    }
+}
 void freeLL(NodeT *list) {
     NodeT *p, *temp;
     p = list;
@@ -22,6 +29,32 @@ void freeLL(NodeT *list) {
         temp = p->next;
         free(p);
         p = temp;
+    }
+}
+void freeRight(NodeT *list) {
+    NodeT *p;
+    if(list){
+        p=list->next;
+        free(list);
+        freeRight(p);
+    }
+}
+void freeWrong(NodeT *list) {
+    if(list->next){
+        freeWrong(list->next);
+    }
+    if(list){
+        free(list);
+    }
+}
+void freeWrong2(NodeT *list) {
+    NodeT *p;
+    if(list){
+        p=list->next;
+        free(list);
+        if(p){
+            freeWrong2(p->next);
+        }
     }
 }
 void showLL(NodeT *list) {
@@ -81,6 +114,11 @@ int main(){
             printf("Done. List is ");
             showLL(all);
         }
-    freeLL(all);
+    freeWrong(all);
+    if(isEmpty(all)){
+        printf("empty");
+    }else{
+        printf("Not");
+    }
     return 0;
 }
