@@ -183,19 +183,6 @@ int main(){
     printf("Show after reversing:\n");
     showLL(rList);
 
-//    printf("@@2:\n");
-//    a=myLinkedListGet(linkedList,1);
-//    printf("%d\n",a);          //返回2
-//    myLinkedListDeleteAtIndex(linkedList,1);  //现在链表是1-> 3
-//    printf("@@delete index 3:\n");
-//    myLinkedListDeleteAtIndex(linkedList,3);
-//    showLL(linkedList);
-//    printf("@@delete index 0 -1:\n");
-//    myLinkedListDeleteAtIndex(linkedList,0);
-//    showLL(linkedList);
-//    printf("@@delete index 0 -2:\n");
-//    myLinkedListDeleteAtIndex(linkedList,0);
-//    showLL(linkedList);
 
 }
 //int main(){
