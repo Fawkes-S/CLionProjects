@@ -71,15 +71,15 @@ int main(int argc, char **argv)
     // Uncomment this block once you have completed the 
     // appropriate list functions
     
-    //char ignore_url[MAX_URL_LENGTH];
-    //printf("Enter a page to ignore or type 'done': ");
-    //while (scanf("%s", ignore_url)) {
-    //    if (strcmp(ignore_url, "done") == 0) {
-    //        break;
-    //    }
-    //    list_add(ignore_list, ignore_url);
-    //    printf("Enter another page to ignore or type 'done': ");
-    //}
+    char ignore_url[MAX_URL_LENGTH];
+    printf("Enter a page to ignore or type 'done': ");
+    while (scanf("%s", ignore_url)) {
+        if (strcmp(ignore_url, "done") == 0) {
+            break;
+        }
+        list_add(ignore_list, ignore_url);
+        printf("Enter another page to ignore or type 'done': ");
+    }
     
     graph_show(network, stdout, ignore_list);
     

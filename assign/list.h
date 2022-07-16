@@ -84,7 +84,7 @@ void list_remove (list, string);
  * return False on error
  */
 bool list_contains (list, string);
-
+void show(list);
 // general interface
 // You do not need to implement these functions, but they could be useful internally or for testing...
 //void   list_append   (list, string);

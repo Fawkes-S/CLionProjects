@@ -49,8 +49,8 @@ void graph_destroy (graph G);
  * to be excluded from the output. The each element in the list will 
  * be a url string.
  */
-void graph_show (graph G, FILE *file, list ignore);
-
+//void graph_show (graph G, FILE *file, list ignore);
+void graph_show (graph G);
 // vertex interface
 /**
  * graph_add_vertex
