@@ -91,6 +91,9 @@ bool TreeSearch(Tree t, Item it) {
 }
 
 // insert a new item into a Tree
+/**
+ *   Ordered, but not balanced
+ */
 Tree TreeInsert(Tree t, Item it) {
     if (t == NULL)
         t = newNode(it);

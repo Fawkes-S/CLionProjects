@@ -23,6 +23,8 @@
 
 #include "list.h"
 #include "graph.h"
+#include "pagerank.h"
+#include "dijkstra.h"
 
 #define MAX_URL_LENGTH 100 
 
@@ -42,6 +44,9 @@ void   add_or_increment_edge(graph, string, string);
 
 int main(int argc, char **argv)
 {
+    double damping, delta;
+    damping = 0.85;
+    delta = 0.00001;
     if (argc != 2) {
         fprintf(stderr, "Usage: %s <url>\n", argv[0]);
         return EXIT_FAILURE;
@@ -82,6 +87,14 @@ int main(int argc, char **argv)
     }
     
     graph_show(network, stdout, ignore_list);
+    graph_pagerank(network, damping, delta, ignore_list);
+    graph_viewrank(network, stdout, ignore_list);
+
+//    graph_shortest_path(network, argv[1], ignore_list);
+//    char destination[BUFSIZ];
+//    printf("destination: ");
+//    scanf("%s", destination);
+//    graph_view_path(network, destination, ignore_list);
     
     // Cleanup
     list_destroy(ignore_list);

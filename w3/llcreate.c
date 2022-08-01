@@ -114,11 +114,11 @@ int main(){
             printf("Done. List is ");
             showLL(all);
         }
-    freeWrong(all);
-    if(isEmpty(all)){
-        printf("empty");
-    }else{
-        printf("Not");
-    }
+//    freeWrong(all);
+//    if(isEmpty(all)){
+//        printf("empty");
+//    }else{
+//        printf("Not");
+//    }
     return 0;
 }

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="ass_test" targetName="ass_test" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e311f5cc-b9a0-42d3-9d31-772a4b4d96a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Tree/.idea/Tree.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/W8/BST.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/W8/BST.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/W8/RBTester.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/W8/RBTree.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/W8/RBTree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/W8/TreeLab.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/W8/queue.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/W8/queue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/cmake-build-debug/CMakeFiles/Tree.dir/BSTree.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/cmake-build-debug/CMakeFiles/Tree.dir/treeLab.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tree/cmake-build-debug/Tree.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ass_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-df1a265c844c5c5de55e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0e3a382f7b4b11c67e99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b551571f0c1268d026b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-25T14-18-38-0578.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ass_test-Debug-89d59e48c4d4ad49aff4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-907078b0693dbf375140.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeRCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assign/(matrix)graph.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assign/graph_dev.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/BSTree.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/BSTree.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/treeLab.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/treeLab.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/GraphTest.c" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/GraphTest.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/crawler.c" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/crawler.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/graph.c" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/graph.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/list.c" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/list.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assign/listMain.c" beforeDir="false" afterPath="$PROJECT_DIR$/../assign/listMain.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/cmake-build-debug/CMakeFiles/untitled.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/cmake-build-debug/CMakeFiles/untitled.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/cmake-build-debug/untitled.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/cmake-build-debug/untitled.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w3/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../w3/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="1.2" />
+  </component>
+  <component name="ProjectId" id="2CRHwUmmlnW8tHBihZwqfFzAOSL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ass_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ass_test" TARGET_NAME="ass_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ass_test" RUN_TARGET_NAME="ass_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e311f5cc-b9a0-42d3-9d31-772a4b4d96a7" name="Changes" comment="" />
+      <created>1658758716078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658758716078</updated>
+      <workItem from="1658758717646" duration="83000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

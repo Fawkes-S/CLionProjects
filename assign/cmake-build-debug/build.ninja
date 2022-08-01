@@ -49,14 +49,14 @@ cmake_ninja_workdir = C$:/Users/Jackson/CLionProjects/assign/cmake-build-debug/
 
 build cmake_object_order_depends_target_assign: phony || CMakeFiles/assign.dir
 
-build CMakeFiles/assign.dir/graph.c.obj: C_COMPILER__assign_Debug C$:/Users/Jackson/CLionProjects/assign/graph.c || cmake_object_order_depends_target_assign
-  DEP_FILE = CMakeFiles\assign.dir\graph.c.obj.d
+build CMakeFiles/assign.dir/list.c.obj: C_COMPILER__assign_Debug C$:/Users/Jackson/CLionProjects/assign/list.c || cmake_object_order_depends_target_assign
+  DEP_FILE = CMakeFiles\assign.dir\list.c.obj.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles\assign.dir
   OBJECT_FILE_DIR = CMakeFiles\assign.dir
 
-build CMakeFiles/assign.dir/GraphTest.c.obj: C_COMPILER__assign_Debug C$:/Users/Jackson/CLionProjects/assign/GraphTest.c || cmake_object_order_depends_target_assign
-  DEP_FILE = CMakeFiles\assign.dir\GraphTest.c.obj.d
+build CMakeFiles/assign.dir/listMain.c.obj: C_COMPILER__assign_Debug C$:/Users/Jackson/CLionProjects/assign/listMain.c || cmake_object_order_depends_target_assign
+  DEP_FILE = CMakeFiles\assign.dir\listMain.c.obj.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles\assign.dir
   OBJECT_FILE_DIR = CMakeFiles\assign.dir
@@ -69,7 +69,7 @@ build CMakeFiles/assign.dir/GraphTest.c.obj: C_COMPILER__assign_Debug C$:/Users/
 #############################################
 # Link the executable assign.exe
 
-build assign.exe: C_EXECUTABLE_LINKER__assign_Debug CMakeFiles/assign.dir/graph.c.obj CMakeFiles/assign.dir/GraphTest.c.obj
+build assign.exe: C_EXECUTABLE_LINKER__assign_Debug CMakeFiles/assign.dir/list.c.obj CMakeFiles/assign.dir/listMain.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\assign.dir

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "w3.exe"
+			"path" : "ass_test.exe"
 		},
 		{
-			"path" : "w3.pdb"
+			"path" : "ass_test.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "w3::@6890427a1f51a3e7e1df",
+	"id" : "ass_test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "w3",
-	"nameOnDisk" : "w3.exe",
+	"name" : "ass_test",
+	"nameOnDisk" : "ass_test.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "design.c",
+			"path" : "main.c",
 			"sourceGroupIndex" : 0
 		}
 	],

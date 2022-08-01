@@ -68,6 +68,7 @@ int main(void) {
             printf("New Tree:");
             printf("  #nodes = %d,  ", TreeNumNodes(mytree));
             printf("  height = %d\n", TreeHeight(mytree));
+            printf("  width = %d\n", TreeWidth(mytree));
             if (TreeHeight(mytree) < 8)
                 showTree(mytree);
             else

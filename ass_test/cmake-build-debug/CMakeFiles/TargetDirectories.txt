@@ -1,0 +1,3 @@
+C:/Users/Jackson/CLionProjects/ass_test/cmake-build-debug/CMakeFiles/ass_test.dir
+C:/Users/Jackson/CLionProjects/ass_test/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Jackson/CLionProjects/ass_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir

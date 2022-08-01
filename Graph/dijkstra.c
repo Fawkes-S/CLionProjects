@@ -24,7 +24,7 @@ void dijkstraSSSP(Graph g, Vertex source) {
         Vertex min = leavePQueue(dist);
         for(int t=0;t<nV;t++){
             if(t!=min && adjacent(g,min,t)){
-                if(dist[min]+adjacent(g,min,t)<dist[t]){ //??adjacent(g,s,t)==weight
+                if(dist[min]+adjacent(g,min,t)<dist[t]){
                     dist[t]=dist[min]+adjacent(g,min,t);
                     pred[t]=min;
                 }
@@ -32,11 +32,13 @@ void dijkstraSSSP(Graph g, Vertex source) {
         }
         vSet[min]=false;
     }
-    for (int i = 0; i < nV; ++i) {
-        if(vSet[i]==true){
-            printf("ERROR!");
-        }
-    }
+//    for (int i = 0; i < nV; ++i) {
+//        if(vSet[i]==true){
+//            printf("ERROR!");
+//        }
+//    }
+
+    // output the result
     int  path[MAX_NODES];
     for(int i=0;i<nV;i++){
         if(pred[i]==-1 && i!=source){

@@ -49,8 +49,8 @@ void graph_destroy (graph G);
  * to be excluded from the output. The each element in the list will 
  * be a url string.
  */
-//void graph_show (graph G, FILE *file, list ignore);
-void graph_show (graph G);
+void graph_show (graph G, FILE *file, list ignore);
+void graph_show1 (graph G);
 // vertex interface
 /**
  * graph_add_vertex
@@ -103,5 +103,7 @@ size_t graph_get_edge (graph G, string vertex1, string vertex2);
  * return 0 on error
  */
 size_t graph_edges_count (graph G, string vertex);
-
+void showL(graph G);
+void graph_pagerank(graph G, double damping, double delta, list ignore);
+void graph_viewrank1(graph G, list ignore);
 #endif //GRAPH_H

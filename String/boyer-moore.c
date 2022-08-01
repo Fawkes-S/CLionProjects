@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-typedef char *string;
 
 #define MAX_TEXT_LENGTH 1024
 #define TEXT_FORMAT_STRING "%[^\n]%*c"
@@ -9,26 +8,18 @@ typedef char *string;
 int *lastOccurrence(char *pattern, char *alphabet){
     int lenP = strlen(pattern);
     int lenA = strlen(alphabet);
-    int *loc = calloc(1, 127);
-//    for (int i = 0; i < lenA; i++) {
-//        for (int j = lenP-1; j > -1; j--) {
-//            if( *(alphabet+i) ==  *(pattern+j) ){
-//                *(loc+i) = j;
-//                break;
-//            } else if( j==0 && *(alphabet+i) !=  *(pattern+j)){
-//                *(loc+i) = -1;
-//            }
-//        }
-//    }
+    int *loc = calloc(127, sizeof(int));
+
     for (int i = 0; i < lenA; i++) {
         *(loc + (int)(*(alphabet + i))) = -1;
     }
 
-    for (int j = lenP-1; j > -1; j--){
+    for (int j = lenP - 1; j > -1; j--){
         if( *(loc + (int)(*(pattern + j))) < j){
             *(loc + (int)(*(pattern + j))) = j;
         }
     }
+    // O(lenP+lenA)
     return loc;
 }
 
@@ -41,6 +32,7 @@ int BoyerMooreMatch(char *text, char *pattern, char *alphabet){
     do {
         if(*(text + i) == *(pattern + j)){
             if(j == 0){
+                printf("\n");
                 for (int k = 0; k < strlen(alphabet); k++) {
                     printf("L[%c] = %d\n", *(alphabet + k), *(L+ (int)(*(alphabet + k)) ));
                 }
@@ -50,11 +42,12 @@ int BoyerMooreMatch(char *text, char *pattern, char *alphabet){
                 j--;
             }
         }else{
-            i += lenPattern - (j < ( 1+L[*(text + i)]) ? j:( 1+L[*(text + i)]));
+            i += lenPattern - (j < ( 1 + *(L + (int)(*(text + i)))) ? j:( 1 + *(L + (int)(*(text + i)))));
             j = lenPattern - 1;
         }
     } while (i < lenText);
 
+    printf("\n");
     for (int k = 0; k < strlen(alphabet); k++) {
         printf("L[%c] = %d\n", *(alphabet + k), *(L+ (int)(*(alphabet + k)) ));
     }
@@ -62,14 +55,6 @@ int BoyerMooreMatch(char *text, char *pattern, char *alphabet){
 }
 
 int main(){
-//    string a = "abcd";
-//    string p = "acab";
-//    int *x = malloc(strlen(a));
-//    x = lastOccurrence(p, a);
-//    for (int i = 0; i < strlen(a); ++i) {
-//        printf("%d, ", *(x+ (int)*(a+i) ));
-//    }
-
     char text[MAX_TEXT_LENGTH];
     char *pattern = malloc(127);
     char *alphabet = malloc(127);
@@ -82,9 +67,9 @@ int main(){
 
     int res = BoyerMooreMatch(text, pattern, alphabet);
     if( res == -1){
-        printf("No match.");
+        printf("\nNo match.");
     }else{
-        printf("Match found at position %d.", res);
+        printf("\nMatch found at position %d.", res);
     }
-
+    return 0;
 }
