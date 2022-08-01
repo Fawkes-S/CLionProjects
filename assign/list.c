@@ -95,7 +95,7 @@ void list_enqueue (list L, string str){
     }
     new->v = malloc(strlen(str)+1);
     strcpy(new->v, str);
-    new->next = L->head->next;       // head is null, start from head->next
+    new->next = L->head->next;                      // head is null, start from head->next
     L->head->next = new;
     if(L->length == 0){
         L->tail = new;
@@ -153,7 +153,7 @@ void list_remove (list L, string str){
 bool list_contains (list L, string str){
     NodeT *new = L->head->next;
     while (new){
-        if(strcmp(new->v, str) != 0){    //new->next->v, str not equals, strcmp(new->v, str) not null
+        if(strcmp(new->v, str) != 0){                   //new->next->v, str not equals, strcmp(new->v, str) not null
             new = new->next;
         }else{
             return true;

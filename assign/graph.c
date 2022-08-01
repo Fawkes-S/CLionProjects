@@ -3,7 +3,6 @@
 #include "string.h"
 #include "math.h"
 
-
 #define HIGH_VALUE 999999           // define a very large number
 
 typedef string Vertex;              // vertices are strings
